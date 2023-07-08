@@ -32,7 +32,7 @@ export const paymentVerification = async(req,res)=>{
 
         })
        
-        res.redirect(`${process.env.BASE_URL}/paymentsuccess?reference=${req.body.razorpay_payment_id}`);
+        res.redirect(`https://payment-app-razorpay.netlify.app/paymentsuccess?reference=${req.body.razorpay_payment_id}`);
     }
     else{
         res.status(400).json({
